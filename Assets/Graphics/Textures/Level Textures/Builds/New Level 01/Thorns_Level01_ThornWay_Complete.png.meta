@@ -1,0 +1,102 @@
+fileFormatVersion: 2
+guid: ba3803b1591b6f84a8dafb8ea616a1df
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Thorns_Level01_ThornWay_Complete_0
+    21300002: Thorns_Level01_ThornWay_Complete_1
+    21300004: Thorns_Level01_ThornWay_Complete_2
+    21300006: Thorns_Level01_ThornWay_Complete_3
+    21300008: Thorns_Level01_ThornWay_Complete_4
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 10
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Thorns_Level01_ThornWay_Complete_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 228
+        width: 593
+        height: 152
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Thorns_Level01_ThornWay_Complete_1
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 5
+        width: 442
+        height: 161
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Thorns_Level01_ThornWay_Complete_2
+      rect:
+        serializedVersion: 2
+        x: 1873
+        y: 220
+        width: 597
+        height: 156
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Thorns_Level01_ThornWay_Complete_3
+      rect:
+        serializedVersion: 2
+        x: 2861
+        y: 6
+        width: 444
+        height: 161
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Thorns_Level01_ThornWay_Complete_4
+      rect:
+        serializedVersion: 2
+        x: 3492
+        y: 211
+        width: 630
+        height: 174
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
