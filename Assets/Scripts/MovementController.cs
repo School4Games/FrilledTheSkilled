@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MovementController : MonoBehaviour{
+public class MovementController : MonoBehaviour
+{
 
 	public float height = 750;
 	public float speed;
 	private bool onFloor = false;
+		
+
 
 	void OnCollisionEnter2D(Collision2D collision)
 	{
@@ -51,9 +54,11 @@ public class MovementController : MonoBehaviour{
 		//move to right and left
 			if (Input.GetKey (KeyCode.A)) {
 			this.rigidbody2D.velocity = new Vector2 (-speed, this.rigidbody2D.velocity.y);
+			this.transform.TransformVector(Vector2.right);
 		}
 		if (Input.GetKey (KeyCode.D)) {
 			this.rigidbody2D.velocity = new Vector2 (speed, this.rigidbody2D.velocity.y);
 		}
 	}
+			
 }
