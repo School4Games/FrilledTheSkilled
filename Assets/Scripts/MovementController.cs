@@ -5,10 +5,12 @@ public class MovementController : MonoBehaviour
 {
 
 	public float height = 750;
-	public float speed;
+	public float maxSpeed = 750;
+	public float move;
 	private bool onFloor = false;
-		
+	bool facingRight = true;
 
+	Animator anim;
 
 	void OnCollisionEnter2D(Collision2D collision)
 	{
@@ -40,25 +42,51 @@ public class MovementController : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-	
+		anim = GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame
-	void Update () 
+	void FixedUpdate () 
 	{
 		if (Input.GetKeyDown (KeyCode.Space)) 
 		{
 			Jump();
+			audio.Play ();
 		}
 
+		float move = Input.GetAxis("Horizontal");
+
+		//Aniamtion Control
+		anim.SetFloat ("Speed", Mathf.Abs(move));
+
+		rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
+
 		//move to right and left
-			if (Input.GetKey (KeyCode.A)) {
-			this.rigidbody2D.velocity = new Vector2 (-speed, this.rigidbody2D.velocity.y);
+			if (Input.GetKeyDown (KeyCode.A))
+		{
+			this.rigidbody2D.velocity = new Vector2 (-move, this.rigidbody2D.velocity.y);
 			this.transform.TransformVector(Vector2.right);
 		}
-		if (Input.GetKey (KeyCode.D)) {
-			this.rigidbody2D.velocity = new Vector2 (speed, this.rigidbody2D.velocity.y);
+
+		if (Input.GetKeyDown (KeyCode.D))
+		{
+			this.rigidbody2D.velocity = new Vector2 (move, this.rigidbody2D.velocity.y);
 		}
+		if (move > 0 && !facingRight)
+						Flip ();
+				else if (move < 0 && facingRight)
+						Flip ();
+
+
+
+	}
+
+	void Flip()
+	{
+		facingRight = !facingRight;
+		Vector3 theScale = transform.localScale;
+		theScale.x *= -1;
+		transform.localScale = theScale;
 	}
 			
 }
