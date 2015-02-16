@@ -7,6 +7,10 @@ TextureImporter:
     21300004: Animation_Idle3
     21300006: Animation_Jump1
     21300008: Animation_Jump2
+    21300010: Animation_Sprites_Walk_1
+    21300012: Animation_Sprites_Walk_2
+    21300014: Animation_Sprites_Walk_3
+    21300016: Animation_Sprites_Walk_4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -51,8 +55,8 @@ TextureImporter:
     - name: Animation_Idle1
       rect:
         serializedVersion: 2
-        x: 13
-        y: 209
+        x: 0
+        y: 1716
         width: 598
         height: 660
       alignment: 0
@@ -62,7 +66,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 663
-        y: 211
+        y: 1715
         width: 590
         height: 656
       alignment: 0
@@ -71,8 +75,8 @@ TextureImporter:
     - name: Animation_Idle3
       rect:
         serializedVersion: 2
-        x: 1339
-        y: 213
+        x: 1344
+        y: 1715
         width: 572
         height: 653
       alignment: 0
@@ -81,8 +85,8 @@ TextureImporter:
     - name: Animation_Jump1
       rect:
         serializedVersion: 2
-        x: 2334
-        y: 203
+        x: 2339
+        y: 1718
         width: 657
         height: 655
       alignment: 0
@@ -91,10 +95,50 @@ TextureImporter:
     - name: Animation_Jump2
       rect:
         serializedVersion: 2
-        x: 3044
-        y: 201
+        x: 3036
+        y: 1711
         width: 647
         height: 657
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animation_Sprites_Walk_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 957
+        width: 613
+        height: 668
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animation_Sprites_Walk_2
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 955
+        width: 582
+        height: 666
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animation_Sprites_Walk_3
+      rect:
+        serializedVersion: 2
+        x: 1362
+        y: 957
+        width: 615
+        height: 664
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animation_Sprites_Walk_4
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 957
+        width: 560
+        height: 664
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
