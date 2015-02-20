@@ -11,6 +11,8 @@ TextureImporter:
     21300012: Animation_Sprites_Walk_2
     21300014: Animation_Sprites_Walk_3
     21300016: Animation_Sprites_Walk_4
+    21300018: Animation_Sprites_Walk_5
+    21300020: Animation_Sprites_Glide
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -126,7 +128,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1362
-        y: 957
+        y: 970
         width: 615
         height: 664
       alignment: 0
@@ -135,10 +137,30 @@ TextureImporter:
     - name: Animation_Sprites_Walk_4
       rect:
         serializedVersion: 2
-        x: 2055
-        y: 957
+        x: 2035
+        y: 966
         width: 560
         height: 664
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animation_Sprites_Walk_5
+      rect:
+        serializedVersion: 2
+        x: 2643
+        y: 967
+        width: 647
+        height: 668
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Animation_Sprites_Glide
+      rect:
+        serializedVersion: 2
+        x: 2980
+        y: 127
+        width: 709
+        height: 687
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -10,7 +10,11 @@ public class MovementController : MonoBehaviour
 	private bool onFloor = false;
 	bool facingRight = true;
 
+
 	Animator anim;
+
+	int jumpHash = Animator.StringToHash("Jump");
+	int glideStateHash = Animator.StringToHash("Glide");
 
 	void OnCollisionEnter2D(Collision2D collision)
 	{
@@ -48,11 +52,24 @@ public class MovementController : MonoBehaviour
 	// Update is called once per frame
 	void FixedUpdate () 
 	{
-		if (Input.GetKeyDown (KeyCode.Space)) 
+		if (Input.GetKeyDown (KeyCode.Space))
 		{
-			Jump();
-			audio.Play ();
+						Jump ();
+						audio.Play ();
+						anim.SetTrigger ("Jump");
 		}
+
+		//Gleiten
+		if (Input.GetKey (KeyCode.Space)) 
+		{
+						transform.Translate (Vector3.up * 20 * Time.deltaTime, Space.World);
+						anim.SetBool ("Glide", true);
+		} 
+
+		else
+			{
+				anim.SetBool("Glide", false);
+			}
 
 		float move = Input.GetAxis("Horizontal");
 
