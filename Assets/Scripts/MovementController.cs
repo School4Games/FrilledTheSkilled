@@ -7,6 +7,7 @@ public class MovementController : MonoBehaviour
 	public float height = 750;
 	public float maxSpeed = 750;
 	public float move;
+	public AudioClip ray_jump_03;
 	private bool onFloor = false;
 	bool facingRight = true;
 
@@ -55,7 +56,7 @@ public class MovementController : MonoBehaviour
 		if (Input.GetKeyDown (KeyCode.Space))
 		{
 						Jump ();
-						audio.Play ();
+						audio.PlayOneShot(ray_jump_03, 0.25f);
 						anim.SetTrigger ("Jump");
 		}
 
